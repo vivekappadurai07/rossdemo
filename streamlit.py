@@ -41,13 +41,23 @@ def create_streamsets_job(job_name, pipeline_name, runtime_parameters, tags):
     st.success(f"StreamSets job '{job_name}' has been created!")
     return job.job_id
 
+#st.set_page_config(layout="wide")
+#st.title(':blue[**Streamsets Job Creation from Pipeline Template**] ')
+#col1, col2 = st.columns([0.5, 0.5])
+#with col1:
+#    st.image('/Users/vivekappadurai/PycharmProjects/pythonProject/venv/share/image/Ross_Stores_logo.svg.png', width=240)
+#with col2:
+#    st.image('/Users/vivekappadurai/PycharmProjects/pythonProject/venv/share/image/streamsets.png', width=240)
+
 st.set_page_config(layout="wide")
 st.title(':blue[**Streamsets Job Creation from Pipeline Template**] ')
 col1, col2 = st.columns([0.5, 0.5])
+
 with col1:
-    st.image('/Users/vivekappadurai/PycharmProjects/pythonProject/venv/share/image/Ross_Stores_logo.svg.png', width=240)
+    st.image('https://raw.githubusercontent.com/vivekappadurai07/rossdemo/main/image/Ross_Stores_logo.svg.png', width=240)
+
 with col2:
-    st.image('/Users/vivekappadurai/PycharmProjects/pythonProject/venv/share/image/streamsets.png', width=240)
+    st.image('https://raw.githubusercontent.com/vivekappadurai07/rossdemo/main/image/streamsets.png', width=240)
 
 
 # sch = Authenticate()
