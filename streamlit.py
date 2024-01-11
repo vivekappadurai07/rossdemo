@@ -8,7 +8,7 @@ import ast
 pipeline_list = None
 
 def Authenticate():
-    sch = ControlHub(credential_id='489da572-9926-42df-b713-db491e8d5423',
+    sch = ControlHub(credential_id=st.secrets["credential_id"],
                      token='eyJ0eXAiOiJKV1QiLCJhbGciOiJub25lIn0.eyJzIjoiNDkzNjFjNTgyOTFjODI3MWE1NjllNGNjNGI3NzBmZWVjNjdiOTRiY2ZlMTFjNDA4NTExMGIwNzYwNThkYTI1NDdlZjk2YWU0OTc5Njg5N2Q1NTFhNmQ5MjgyNzVkODMxNjlkODdkODdiZjEyMjA5M2I0MGQ4NTNkOTc3YTZkZDgiLCJ2IjoxLCJpc3MiOiJuYTAxIiwianRpIjoiNDg5ZGE1NzItOTkyNi00MmRmLWI3MTMtZGI0OTFlOGQ1NDIzIiwibyI6IjRmNzE1YjA1LTNlMmUtMTFlZC05OWMzLWQzNTA4MDEzY2RhZSJ9.')
     return sch
 def Fetch_all_Pipelines():
